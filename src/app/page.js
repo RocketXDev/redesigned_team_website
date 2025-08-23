@@ -6,6 +6,7 @@ export default function Home() {
     <>
       <Nav/>
       <div className="main-wrapper">
+        <img src='/main_3.png'></img>
         <div className='main-text-wrapper'>
           <div className='title'>Welcome to the official website of</div>
           <div className='brand'><span>Neset & Markelov</span></div>
