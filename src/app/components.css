@@ -270,3 +270,19 @@ ul > a:hover {
 
 
 /* ABOUT PAGE */
+
+/* TEMPORARY PAGE */
+
+.temp-placeholder {
+    font-size: 3.5rem;
+    color: var(--text-color);
+    text-align: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+
+/* TEMPORARY PAGE */

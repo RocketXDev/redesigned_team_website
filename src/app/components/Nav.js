@@ -9,12 +9,13 @@ export default function Nav() {
                     <Link href="/">Leah Neset & Artem Markelov</Link>
                 </div>
                 <ul className="nav-links">
-                    <Link href="../pages/about">About us</Link>
-                    <li>Training</li>
-                    <li>Competitions</li>
-                    <li>Videos</li>
-                    <li>Social Media</li>
-                    <li>Sponsors</li>
+                    <Link href="../pages/temporary">About us</Link>
+                    <Link href="../pages/temporary">Training</Link>
+                    <Link href="../pages/temporary">Competitions</Link>
+                    <Link href="../pages/temporary">Videos</Link>
+                    <Link href="../pages/temporary">Social Media</Link>
+                    <Link href="../pages/temporary">Sponsors</Link>
+                    <Link href="../pages/store">Our Store</Link>
                 </ul>
             </div>
         </div>
