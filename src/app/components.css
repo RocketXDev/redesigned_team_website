@@ -286,3 +286,47 @@ ul > a:hover {
 }
 
 /* TEMPORARY PAGE */
+
+/* STORE PAGE */
+
+.store-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 100px;
+    flex-wrap: wrap;
+}
+
+.store-product {
+    color: var(--neutrual-color);
+    font-size: 3.5rem;
+    border: 1px solid var(--neutrual-color);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    cursor: pointer;
+    background-color:rgba(	224, 222, 217, 0.4);
+}
+
+.store-product:hover {
+    box-shadow: 3px 3px 10px var(--neutrual-color);
+}
+
+.pr-name {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 3.6rem;
+    font-style: italic ;
+    margin-top: 10px;
+}
+
+.pr-img {
+    border-radius: 100%;
+}
+
+
+/* STORE PAGE */
