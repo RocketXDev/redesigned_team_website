@@ -302,18 +302,15 @@ ul > a:hover {
     color: var(--neutrual-color);
     font-size: 3.5rem;
     border: 1px solid var(--neutrual-color);
-    border-radius: 10px;
+    min-width: 600px;
+    height: 520px;
     padding: 30px;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     cursor: pointer;
     background-color:rgba(	224, 222, 217, 0.4);
-}
-
-.store-product:hover {
-    box-shadow: 3px 3px 10px var(--neutrual-color);
 }
 
 .pr-name {
@@ -324,9 +321,23 @@ ul > a:hover {
     margin-top: 10px;
 }
 
-.pr-img {
-    border-radius: 100%;
+.pr-order {
+    margin-top: 20px;
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+    width: 200px;
+    background-color: var(--text-color);
+    text-align: center;
 }
 
+.pr-order > a {
+    color: var(--primary-color);
+    font-size: 2.3rem;
+    text-decoration: none;
+}
+
+.pr-order:hover {
+    box-shadow: inset -1px -1px 5px var(--primary-color);
+}
 
 /* STORE PAGE */
