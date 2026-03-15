@@ -14,7 +14,7 @@ export default function Store() {
                     <Image alt='NM Hoodie' width={500} height={300} src='/merch_design.png' className='pr-img'></Image>
                     <div className='pr-name'>NM Hoodie</div>
                     <div className='pr-price'>$40.00 USD</div>
-                    <div className="pr-order"><a href="https://docs.google.com/forms/d/e/1FAIpQLSd9UzgIyPMst0uqA4h1nfFslhVnPTO2gcch5C6yk-HAnnLPPA/viewform?usp=header">Order</a></div>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd9UzgIyPMst0uqA4h1nfFslhVnPTO2gcch5C6yk-HAnnLPPA/viewform?usp=header"><div className="pr-order">Order</div></a>
                 </div>
                 <div className='store-product'>
                     <Image alt='NM Keychains' width={330} height={330} src='/keychain.png' className='pr-img'></Image>
