@@ -16,6 +16,10 @@
     position: relative;
 }
 
+.hamburger-mobile {
+    display: none;
+}
+
 .nav-title > a {
     cursor: pointer;
     font-size: 3.5rem;
@@ -333,7 +337,7 @@ ul > a:hover {
     text-decoration: none;
 }
 
-.pr-order > a {
+a {
     color: var(--primary-color);
     font-size: 2.3rem;
     text-decoration: none;
@@ -344,3 +348,99 @@ ul > a:hover {
 }
 
 /* STORE PAGE */
+
+
+/* MOBILE VERSION */
+@media (max-width: 768px) {
+
+    .nav-title > a {
+        font-size: 2.0rem;
+    }
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .hamburger-mobile > span {
+        display: block;
+        width: 35px;
+        height: 2px;
+        background-color: var(--text-color);
+    }
+
+    .main-wrapper {
+        min-height: 580px;
+    }
+
+    .main-wrapper > img {
+        width: 100%;
+        left: 0px;
+        top: 300px;
+    }
+
+    .main-text-wrapper {
+        width: 100%;
+        top: 200px;
+        left: 0%;
+        font-size: 2.3rem;
+    }
+
+    .title {
+        font-size: 2.4rem;
+    }
+
+    .brand {
+        margin-bottom: 0px;
+    }
+
+    .brand > span {
+        font-size: 4.5rem;
+    }
+
+    .subtitle {
+        font-size: 2.1rem;
+        width: 100%;
+    }
+
+    .text-btn {
+        width: 180px;
+        font-size: 1.6rem;
+    }
+
+    .footer-title {
+        text-align: center;
+        font-size: 2.0rem;
+    }
+
+    .store-wrapper {
+        padding: 30px 10px;
+        gap: 30px;
+    }
+
+    .store-product {
+        min-width: 0px;
+        gap: 10px;
+        height: 400px;
+        width: 300px;
+    }
+
+    .pr-name {
+        font-size: 2.6rem;
+    }
+    .pr-price {
+        font-size: 2.2rem;
+    }
+    .pr-order {
+        font-size: 2.0rem;
+        width: 150px;
+        margin-top: 5px;
+    }
+
+}

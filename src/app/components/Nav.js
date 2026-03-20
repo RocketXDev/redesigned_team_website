@@ -8,6 +8,11 @@ export default function Nav() {
                 <div className="nav-title">
                     <Link href="/">Leah Neset & Artem Markelov</Link>
                 </div>
+                <div className='hamburger-mobile'>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <ul className="nav-links">
                     <Link href="../pages/temporary">About us</Link>
                     <Link href="../pages/temporary">Training</Link>
