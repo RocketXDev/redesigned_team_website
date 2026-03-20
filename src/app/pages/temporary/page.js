@@ -6,7 +6,7 @@ export default function Temporary() {
     <>
       <Nav/>
       <div className="main-wrapper">
-        <div className="temp-placeholder">This page is currently under development.<br></br> Please come back later!</div>
+        <div className="temp-placeholder">This page is currently under development<br></br> Please come back later!</div>
       </div>
       <Footer/>
     </>
