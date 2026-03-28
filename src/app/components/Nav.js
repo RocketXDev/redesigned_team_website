@@ -16,11 +16,11 @@ export default function Nav() {
             </div>
             <div className='links-wrapper'>
                 <Link href="../pages/temporary">About us</Link>
-                <Link href="../pages/temporary">Training</Link>
                 <Link href="../pages/temporary">Competitions</Link>
                 <Link href="../pages/temporary">Videos</Link>
                 <Link href="../pages/temporary">Social Media</Link>
-                <Link href="../pages/temporary">Sponsors</Link>
+                <Link href="../pages/sponsors">Sponsors</Link>
+                <Link href="../pages/temporary">Donate</Link>
                 <Link href="../pages/store">Our Store</Link>
             </div>
         </ul>)
@@ -39,11 +39,11 @@ export default function Nav() {
                 </div>
                 <ul className="nav-links">
                     <Link href="../pages/temporary">About us</Link>
-                    <Link href="../pages/temporary">Training</Link>
                     <Link href="../pages/temporary">Competitions</Link>
                     <Link href="../pages/temporary">Videos</Link>
                     <Link href="../pages/temporary">Social Media</Link>
-                    <Link href="../pages/temporary">Sponsors</Link>
+                    <Link href="../pages/sponsors">Sponsors</Link>
+                    <Link href="../pages/temporary">Donate</Link>
                     <Link href="../pages/store">Our Store</Link>
                 </ul>
             </div>
