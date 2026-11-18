@@ -117,7 +117,7 @@ export const team = [
 export const sponsors = [
   { name: 'MK Blades', url: 'https://www.mkblades.com/', text: 'Precision figure skating blades, trusted by skaters for over a century.' },
   { name: 'SkatesUS', url: 'https://skatesus.com/', text: 'Figure skating boots, blades and expert fitting.' },
-  { name: 'JIV Sport', url: 'https://jivsport.com/', text: 'Skating apparel and training wear.' },
+  { name: 'Save The Duck', url: 'https://www.savetheduck.com/', text: 'Animal-free outerwear, keeping us warm on and off the ice.' },
 ];
 
 export const products = [

@@ -37,22 +37,9 @@ export default function Donate() {
 
           <div className="donate-info">
             <span className="eyebrow">Where it goes</span>
-            <div>
-              <div className="split-bar" aria-hidden="true">
-                <span />
-                <span />
-              </div>
-              <div className="split-legend">
-                <span>
-                  <span className="dot" />
-                  <b>90%</b> skating expenses &amp; coaching
-                </span>
-                <span>
-                  <span className="dot dot--cream" />
-                  <b>10%</b> to charity
-                </span>
-              </div>
-            </div>
+            <p className="donate-all">
+              <b>100%</b> of every donation goes directly to our training.
+            </p>
             <ul className="cost-list">
               {costs.map((c) => (
                 <li key={c.title}>
