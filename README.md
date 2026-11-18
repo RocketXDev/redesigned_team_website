@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# nesetmarkelov.com
 
-## Getting Started
-
-First, run the development server:
+Official website of U.S. ice dancers Leah Neset & Artem Markelov. Next.js (App Router).
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev            # http://localhost:3000
+npm run build          # production build
+npm run update-results # pull new competition results from the ISU
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Where the content lives
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+| What | File |
+| --- | --- |
+| Bios, story, timeline, team, sponsors, store products, videos, social links | `src/data/site.js` |
+| Seasons, programs and competition results | `src/data/competitions.json` |
+| Donation amounts, Venmo username | `donate` in `src/data/site.js` |
+| Styles | `src/app/globals.css` |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Pages: `/`, `/about`, `/competitions`, `/videos`, `/social`, `/sponsors`, `/donate`, `/store`.
+Old `/pages/...` URLs redirect to the new ones (`next.config.mjs`).
 
-## Learn More
+## Competition results update themselves
 
-To learn more about Next.js, take a look at the following resources:
+`scripts/update-competitions.mjs` reads the team's ISU bio, finds competitions that aren't in
+`competitions.json` yet, and adds them with rhythm dance / free dance scores and placements.
+A new season is created automatically with program music from the ISU bio.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `.github/workflows/update-competitions.yml` runs it every day and commits any changes; the push redeploys the site.
+- Events the ISU doesn't host (U.S. Championships, some Lake Placid editions) are added with the placement only.
+  Fill in scores by hand in `competitions.json`, or point the script at a results page:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+node scripts/update-competitions.mjs --url https://results.isu.org/results/season2627/gpusa2026/
+node scripts/update-competitions.mjs --url <results url> --event "Nebelhorn Trophy 2026"   # match an existing entry
+node scripts/update-competitions.mjs --dry-run                                              # preview only
+```
 
-## Deploy on Vercel
+## Instagram feed
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The home page (team feed) and `/social` (team, Leah, Artem tabs) show a carousel of the latest
+Instagram posts, refreshed once a day. Until a token is set, each tab shows a link to the profile instead.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Make each Instagram account a **Professional** account (Creator or Business) in the Instagram app.
+2. At [developers.facebook.com](https://developers.facebook.com/) create an app → add **Instagram** →
+   **API setup with Instagram login** → **Generate access tokens**, log in with the account, copy the token.
+3. Add the tokens as environment variables on the host (Vercel → Project → Settings → Environment Variables), then redeploy:
+
+```
+INSTAGRAM_TOKEN_TEAM=...
+INSTAGRAM_TOKEN_LEAH=...
+INSTAGRAM_TOKEN_ARTEM=...
+```
+
+Tokens last 60 days and are extended automatically each time the feed refreshes.
+
+## Donations (card, Apple Pay, Google Pay, Cash App Pay)
+
+The donation box on `/donate` sends donors to Square checkout for the amount they pick — the same
+Square account as the store. Until it's set up, the button says "Message us to donate" (Venmo still works).
+
+1. [developer.squareup.com](https://developer.squareup.com/apps) → sign in with the store's Square account → **Create an app**.
+2. Open the app → **Credentials** → switch to **Production** → copy the **Access token**.
+3. **Locations** (left menu) → copy the **Location ID** of the business location.
+4. On the host (Vercel → Settings → Environment Variables) add:
+
+```
+SQUARE_ACCESS_TOKEN=...
+SQUARE_LOCATION_ID=...
+```
+
+Then redeploy. To test first, use the app's **Sandbox** token and location and also set `SQUARE_ENVIRONMENT=sandbox`.
+
+No-code alternative: in Square Dashboard → Online → Payment links, create a link of type **Donation**
+(donor types the amount) and paste it into `squareLink` in `src/data/site.js`.
+
+Square's standard online card fee applies (about 2.9% + 30¢). Donors get a Square receipt and land on `/donate/thank-you`.

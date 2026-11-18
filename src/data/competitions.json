@@ -1,0 +1,609 @@
+{
+  "_readme": "Source of truth for the Competitions page (and the latest-results section on the home page). scripts/update-competitions.mjs adds new events automatically from the ISU; you can also edit by hand. Seasons and results are newest first.",
+  "isuBioId": "00111528",
+  "seasons": [
+    {
+      "season": "2026-2027",
+      "rhythmDance": "\"Cheek to Cheek\", Irving Berlin; \"The World We Knew (Over and Over)\", Frank Sinatra; \"It Don't Mean a Thing\", Duke Ellington",
+      "freeDance": "\"Clair de Lune\", Claude Debussy; \"Clair de Lune Poem\"",
+      "results": [
+        {
+          "place": 5,
+          "event": "2026 Skate America (Grand Prix)",
+          "isuName": "ISU GP saatva Skate America 2026",
+          "rd": {
+            "score": 69.1,
+            "place": 6
+          },
+          "fd": {
+            "score": 106.54,
+            "place": 5
+          },
+          "total": 175.64
+        },
+        {
+          "place": 5,
+          "event": "2026 Grand Prix de France",
+          "isuName": "ISU GP Grand Prix de France 2026",
+          "rd": {
+            "score": 64.6,
+            "place": 6
+          },
+          "fd": {
+            "score": 100.12,
+            "place": 5
+          },
+          "total": 164.72
+        },
+        {
+          "place": 5,
+          "event": "2026 Challenger Series Nebelhorn Trophy",
+          "isuName": "ISU CS Nebelhorn Trophy 2026",
+          "rd": {
+            "score": 66.88,
+            "place": 5
+          },
+          "fd": {
+            "score": 103.88,
+            "place": 5
+          },
+          "total": 170.76
+        },
+        {
+          "place": 3,
+          "event": "2026 Lake Placid Ice Dance International",
+          "isuName": "Lake Placid Ice Dance International 2026",
+          "rd": {
+            "score": 62.67,
+            "place": 3
+          },
+          "fd": {
+            "score": 97.24,
+            "place": 3
+          },
+          "total": 159.91
+        }
+      ],
+      "level": "Senior"
+    },
+    {
+      "season": "2025-2026",
+      "rhythmDance": "\"Be My Lover\", La Bouche; \"Say My Name\", Destiny's Child; \"Everybody (Backstreet's Back)\", Backstreet Boys; \"Freed from Desire\", Gala",
+      "freeDance": "Selections from the Napoleon soundtrack, Martin Phipps",
+      "results": [
+        {
+          "place": 8,
+          "event": "2026 U.S. Figure Skating Championships",
+          "isuName": "National Championships 2026",
+          "rd": {
+            "score": 71.28,
+            "place": 9
+          },
+          "fd": {
+            "score": 105.18,
+            "place": 8
+          },
+          "total": 176.46
+        },
+        {
+          "place": 5,
+          "event": "2025 Challenger Series Golden Spin of Zagreb",
+          "isuName": "ISU CS Golden Spin of Zagreb 2025",
+          "rd": {
+            "score": 63.85,
+            "place": 8
+          },
+          "fd": {
+            "score": 104.73,
+            "place": 5
+          },
+          "total": 168.58
+        },
+        {
+          "place": 10,
+          "event": "2025 Skate Canada International (Grand Prix)",
+          "isuName": "ISU GP Skate Canada International 2025",
+          "rd": {
+            "score": 65.51,
+            "place": 9
+          },
+          "fd": {
+            "score": 99.68,
+            "place": 10
+          },
+          "total": 165.19
+        },
+        {
+          "place": 5,
+          "event": "2025 Challenger Series Denis Ten Memorial Challenge",
+          "isuName": "ISU CS Denis Ten Memorial Challenge 2025",
+          "rd": {
+            "score": 67.8,
+            "place": 5
+          },
+          "fd": {
+            "score": 101.8,
+            "place": 5
+          },
+          "total": 169.6
+        },
+        {
+          "place": 3,
+          "event": "2025 Challenger Series Kinoshita Group Cup",
+          "isuName": "ISU CS Kinoshita Group Cup 2025",
+          "rd": {
+            "score": 68.77,
+            "place": 3
+          },
+          "fd": {
+            "score": 107.5,
+            "place": 3
+          },
+          "total": 176.27
+        }
+      ],
+      "level": "Senior"
+    },
+    {
+      "season": "2024-2025",
+      "note": "Senior debut",
+      "rhythmDance": "\"Waterloo\", \"Dancing Queen\", \"Gimme! Gimme! Gimme! (A Man After Midnight)\", ABBA",
+      "freeDance": "\"My Love Will Never Die\", Claire Wyndham & AG; \"Hold Your Breath\", Astyria; \"Gloria Regali\", Tommee Profitt & Fleurie",
+      "results": [
+        {
+          "place": 9,
+          "event": "2025 U.S. Figure Skating Championships",
+          "isuName": "National Championships 2025",
+          "rd": {
+            "score": 72.17,
+            "place": 9
+          },
+          "fd": {
+            "score": 110.95,
+            "place": 7
+          },
+          "total": 183.12
+        },
+        {
+          "place": 4,
+          "event": "2024 Challenger Series Golden Spin of Zagreb",
+          "isuName": "ISU CS Golden Spin of Zagreb 2024",
+          "rd": {
+            "score": 70.19,
+            "place": 4
+          },
+          "fd": {
+            "score": 101.44,
+            "place": 4
+          },
+          "total": 171.63
+        },
+        {
+          "place": 6,
+          "event": "2024 Grand Prix de France",
+          "isuName": "ISU GP Grand Prix de France 2024",
+          "rd": {
+            "score": 71.86,
+            "place": 6
+          },
+          "fd": {
+            "score": 104.74,
+            "place": 6
+          },
+          "total": 176.6
+        },
+        {
+          "place": 5,
+          "event": "2024 Skate America (Grand Prix)",
+          "isuName": "ISU GP Skate America 2024",
+          "rd": {
+            "score": 69.68,
+            "place": 8
+          },
+          "fd": {
+            "score": 109.7,
+            "place": 5
+          },
+          "total": 179.38
+        },
+        {
+          "place": 3,
+          "event": "2024 Challenger Series Lombardia Trophy",
+          "isuName": "ISU CS Lombardia Trophy 2024",
+          "rd": {
+            "score": 70.77,
+            "place": 2
+          },
+          "fd": {
+            "score": 104.56,
+            "place": 4
+          },
+          "total": 175.33
+        },
+        {
+          "place": 4,
+          "event": "2024 Lake Placid Ice Dance International",
+          "isuName": "Lake Placid International Ice Dance Competition 2024",
+          "rd": {
+            "score": 71.21,
+            "place": 4
+          },
+          "fd": {
+            "score": 112.54,
+            "place": 2
+          },
+          "total": 183.75
+        }
+      ],
+      "level": "Senior"
+    },
+    {
+      "season": "2023-2024",
+      "rhythmDance": "\"Still Loving You\", Scorpions; \"I Hate Myself For Loving You\", Joan Jett and the Blackhearts",
+      "freeDance": "\"Anytime, Anywhere\", Sarah Brightman; \"Cry\", Thomas Bergersen",
+      "results": [
+        {
+          "place": 1,
+          "event": "2024 World Junior Championships, Taipei",
+          "isuName": "ISU World Junior Championships 2024",
+          "rd": {
+            "score": 70.16,
+            "place": 1
+          },
+          "fd": {
+            "score": 99.6,
+            "place": 1
+          },
+          "total": 169.76
+        },
+        {
+          "place": 1,
+          "event": "2024 U.S. Figure Skating Championships (Junior)",
+          "isuName": "National Championships 2024",
+          "rd": {
+            "score": 75.03,
+            "place": 1
+          },
+          "fd": {
+            "score": 109.08,
+            "place": 1
+          },
+          "total": 184.11
+        },
+        {
+          "place": 1,
+          "event": "2023 Junior Grand Prix Final, Beijing",
+          "isuName": "ISU Grand Prix Final 2023/24",
+          "rd": {
+            "score": 72.48,
+            "place": 1
+          },
+          "fd": {
+            "score": 104.61,
+            "place": 1
+          },
+          "total": 177.09
+        },
+        {
+          "place": 1,
+          "event": "2023 Junior Grand Prix in Osaka",
+          "isuName": "ISU JGP Osaka 2023",
+          "rd": {
+            "score": 67.37,
+            "place": 1
+          },
+          "fd": {
+            "score": 100.14,
+            "place": 1
+          },
+          "total": 167.51
+        },
+        {
+          "place": 1,
+          "event": "2023 Junior Grand Prix in Bangkok",
+          "isuName": "ISU JGP Bangkok 2023",
+          "rd": {
+            "score": 68.99,
+            "place": 1
+          },
+          "fd": {
+            "score": 99.48,
+            "place": 1
+          },
+          "total": 168.47
+        },
+        {
+          "place": 1,
+          "event": "2023 Lake Placid Ice Dance International",
+          "isuName": "2023 Lake Placid Ice Dance International",
+          "rd": {
+            "score": 63.99,
+            "place": 1
+          },
+          "fd": {
+            "score": 97.28,
+            "place": 1
+          },
+          "total": 161.27
+        },
+        {
+          "place": 1,
+          "event": "2023 Dallas Classic",
+          "rd": {
+            "score": 67.22,
+            "place": 1
+          },
+          "fd": {
+            "score": 100.78,
+            "place": 1
+          },
+          "total": 168.0
+        }
+      ],
+      "galleries": [
+        {
+          "title": "Program info</div> <div class=\"info__text\"> <span class=\"info__text__category\">Rhythm Dance:</span>\"Still Loving You\", Scorpions; \"I Hate Myself For Loving You\", Joan Jett and the Blackhearts <br><br> <span class=\"info__text__category\">Free Dance:</span>\"Anytime, Anywhere\", Sarah Brightman; \"Cry\", Thomas Bergersen </div> </div> <div class=\"info__results\"> <div class=\"title title_fz30 results__title\">Competition results</div> <table class=\"competition__table\"> <tr> <th class=\"competition__table__column\">Place</th> <th class=\"competition__table__column\">Event</th> <th class=\"competition__table__column\">RD</th> <th class=\"competition__table__column\">FD</th> <th class=\"competition__table__column\">Total</th> </tr> <tr> <td class=\"competition__table__row competition__table__row__firstcolumn\">1st</td> <td class=\"competition__table__row\">2024 World Junior Championships, Taipei</td> <td class=\"competition__table__row\">70.16(1st)</td> <td class=\"competition__table__row\">99.60(1st)</td> <td class=\"competition__table__row\">169.76</td> </tr> <tr> <td class=\"competition__table__row competition__table__row__firstcolumn\">1st</td> <td class=\"competition__table__row\">2024 U.S. Figure Skating Championships (Junior)</td> <td class=\"competition__table__row\">75.03(1st)</td> <td class=\"competition__table__row\">109.08(1st)</td> <td class=\"competition__table__row\">184.11</td> </tr> <tr> <td class=\"competition__table__row competition__table__row__firstcolumn\">1st</td> <td class=\"competition__table__row\">2023 Junior Grand Prix Final, Beijing</td> <td class=\"competition__table__row\">72.48(1st)</td> <td class=\"competition__table__row\">104.61(1st)</td> <td class=\"competition__table__row\">177.09</td> </tr> <tr> <td class=\"competition__table__row competition__table__row__firstcolumn\">1st</td> <td class=\"competition__table__row\">2023 Junior Grand Prix in Osaka</td> <td class=\"competition__table__row\">67.37(1st)</td> <td class=\"competition__table__row\">100.14(1st)</td> <td class=\"competition__table__row\">167.51</td> </tr> <tr> <td class=\"competition__table__row competition__table__row__firstcolumn\">1st</td> <td class=\"competition__table__row\">2023 Junior Grand Prix in Bangkok</td> <td class=\"competition__table__row\">68.99(1st)</td> <td class=\"competition__table__row\">99.48(1st)</td> <td class=\"competition__table__row\">168.47</td> </tr> <tr> <td class=\"competition__table__row competition__table__row__firstcolumn\">1st</td> <td class=\"competition__table__row\">2023 Lake Placid Ice Dance International</td> <td class=\"competition__table__row\">63.99(1st)</td> <td class=\"competition__table__row\">97.28(1st)</td> <td class=\"competition__table__row\">161.27</td> </tr> <tr> <td class=\"competition__table__row competition__table__row__firstcolumn\">1st</td> <td class=\"competition__table__row\">2023 Dallas Classic</td> <td class=\"competition__table__row\">67.22(1st)</td> <td class=\"competition__table__row\">100.78(1st)</td> <td class=\"competition__table__row\">168.00</td> </tr> </table> </div> <div class=\"info__pic\"> <div class=\"title title_fz30 info__title\">2023 Junior Grand Prix Thailand in Bangkok",
+          "gettyId": "jLCEK16JQrV4TiBm4xJe6w",
+          "sig": "iIVFSEEx3-_cnfTI5fPyYM575AIIo7u_3BRlxXg_XFQ=",
+          "width": 594,
+          "height": 396,
+          "items": "1639653187,1622121888,1640070636,1640070076,1640070637",
+          "caption": false
+        },
+        {
+          "title": "2023 Junior Grand Prix Japan in Osaka",
+          "gettyId": "YWI0iL-kR3hmELj-MGJM6Q",
+          "sig": "60j2rhQQwGB6p49nHcMdH3LCaSdADose3PNrLxBX7sU=",
+          "width": 594,
+          "height": 396,
+          "items": "1683983622,1684016901,1684016907,1679800870,1684623076",
+          "caption": false
+        }
+      ],
+      "level": "Junior"
+    },
+    {
+      "season": "2022-2023",
+      "rhythmDance": "\"Backstage Romance\", Ricky Rojas, Robyn Hurder & Original Broadway Cast of Moulin Rouge! The Musical, \"Tango D'amor\", Tango Jointz, \"La Sal de la Tierra\", Juan Peña \"El Lebrijano\", \"Mi Confesión\", Gotan Project",
+      "freeDance": "\"Hoist The Colours\", \"Mermaids\", \"Drink Up Me Hearties\", Hans Zimmer and \"My Name Is Barbossa\", Geoff Zanelli",
+      "results": [
+        {
+          "place": 5,
+          "event": "2023 Junior World Championship",
+          "isuName": "ISU World Junior Championships 2023",
+          "rd": {
+            "score": 64.01,
+            "place": 7
+          },
+          "fd": {
+            "score": 98.58,
+            "place": 5
+          },
+          "total": 162.59
+        },
+        {
+          "place": 2,
+          "event": "2023 Bavarian Open",
+          "isuName": "Bavarian Open 2023",
+          "rd": {
+            "score": 65.29,
+            "place": 3
+          },
+          "fd": {
+            "score": 99.14,
+            "place": 1
+          },
+          "total": 164.43
+        },
+        {
+          "place": 1,
+          "event": "2023 U.S. Figure Skating Championship",
+          "isuName": "National Championships 2023",
+          "rd": {
+            "score": 56.19,
+            "place": 7
+          },
+          "fd": {
+            "score": 105.56,
+            "place": 1
+          },
+          "total": 161.75
+        },
+        {
+          "place": 1,
+          "event": "2023 U.S. Ice Dance Final",
+          "rd": {
+            "score": 70.47,
+            "place": 1
+          },
+          "fd": {
+            "score": 95.11,
+            "place": 2
+          },
+          "total": 165.58
+        },
+        {
+          "place": 2,
+          "event": "2022 Santa Claus Cup",
+          "isuName": "Santa Claus Cup 2022",
+          "rd": {
+            "score": 59.64,
+            "place": 2
+          },
+          "fd": {
+            "score": 93.41,
+            "place": 1
+          },
+          "total": 153.05
+        },
+        {
+          "place": 3,
+          "event": "2022 Junior Grand Prix in Egna, Italy",
+          "isuName": "ISU JGP Egna-Neumarkt 2022",
+          "rd": {
+            "score": 61.27,
+            "place": 2
+          },
+          "fd": {
+            "score": 95.09,
+            "place": 3
+          },
+          "total": 156.36
+        },
+        {
+          "place": 1,
+          "event": "2022 Dallas Classic",
+          "rd": {
+            "score": 64.26,
+            "place": 1
+          },
+          "fd": {
+            "score": 95.87,
+            "place": 1
+          },
+          "total": 160.13
+        }
+      ],
+      "galleries": [
+        {
+          "title": "Program info</div> <div class=\"info__text\"> <span class=\"info__text__category\">Rhythm Dance:</span>\"Backstage Romance\", Ricky Rojas, Robyn Hurder & Original Broadway Cast of Moulin Rouge! The Musical, \"Tango D'amor\", Tango Jointz, \"La Sal de la Tierra\", Juan Peña \"El Lebrijano\", \"Mi Confesión\", Gotan Project <br><br> <span class=\"info__text__category\">Free Dance:</span>\"Hoist The Colours\", \"Mermaids\", \"Drink Up Me Hearties\", Hans Zimmer and \"My Name Is Barbossa\", Geoff Zanelli </div> </div> <div class=\"info__results\"> <div class=\"title title_fz30 results__title\">Competition results</div> <table class=\"competition__table\"> <tr> <th class=\"competition__table__column\">Place</th> <th class=\"competition__table__column\">Event</th> <th class=\"competition__table__column\">RD</th> <th class=\"competition__table__column\">FD</th> <th class=\"competition__table__column\">Total</th> </tr> <tr> <td class=\"competition__table__row competition__table__row__firstcolumn\">5th</td> <td class=\"competition__table__row\">2023 Junior World Championship</td> <td class=\"competition__table__row\">64.01(7th)</td> <td class=\"competition__table__row\">98.58(5th)</td> <td class=\"competition__table__row\">162.59</td> </tr> <tr> <td class=\"competition__table__row competition__table__row__firstcolumn\">2nd</td> <td class=\"competition__table__row\">2023 Bavarian Open</td> <td class=\"competition__table__row\">65.29(3rd)</td> <td class=\"competition__table__row\">99.14(1st)</td> <td class=\"competition__table__row\">164.43</td> </tr> <tr> <td class=\"competition__table__row competition__table__row__firstcolumn\">1st</td> <td class=\"competition__table__row\">2023 U.S. Figure Skating Championship</td> <td class=\"competition__table__row\">56.19(7th)</td> <td class=\"competition__table__row\">105.56(1st)</td> <td class=\"competition__table__row\">161.75</td> </tr> <tr> <td class=\"competition__table__row competition__table__row__firstcolumn\">1st</td> <td class=\"competition__table__row\">2023 U.S. Ice Dance Final</td> <td class=\"competition__table__row\">70.47(1st)</td> <td class=\"competition__table__row\">95.11(2nd)</td> <td class=\"competition__table__row\">165.58</td> </tr> <tr> <td class=\"competition__table__row competition__table__row__firstcolumn\">2nd</td> <td class=\"competition__table__row\">2022 Santa Claus Cup</td> <td class=\"competition__table__row\">59.64(2nd)</td> <td class=\"competition__table__row\">93.41(1st)</td> <td class=\"competition__table__row\">153.05</td> </tr> <tr> <td class=\"competition__table__row competition__table__row__firstcolumn\">3rd</td> <td class=\"competition__table__row\">2022 Junior Grand Prix in Egna, Italy</td> <td class=\"competition__table__row\">61.27(2nd)</td> <td class=\"competition__table__row\">95.09(3rd)</td> <td class=\"competition__table__row\">156.36</td> </tr> <tr> <td class=\"competition__table__row competition__table__row__firstcolumn\">1st</td> <td class=\"competition__table__row\">2022 Dallas Classic</td> <td class=\"competition__table__row\">64.26(1st)</td> <td class=\"competition__table__row\">95.87(1st)</td> <td class=\"competition__table__row\">160.13</td> </tr> </table> </div> <div class=\"info__pic\"> <div class=\"title title_fz30 info__title\">2022 Junior Grand Prix Italy in Egna",
+          "gettyId": "Nhcg0XvmSJVL-d-_FLXI-w",
+          "sig": "uFa-qTAdA7HU1bt6zjY2m8deSeWVHwZoSXEYbvgNNjQ=",
+          "width": 594,
+          "height": 396,
+          "items": "1433447130,1433447135,1433138930,1433449423",
+          "caption": true
+        }
+      ],
+      "level": "Junior"
+    },
+    {
+      "season": "2021-2022",
+      "rhythmDance": "\"Feeling Good,\" Michael Bublé and \"DJ Turn It Up,\" Yellow Claw",
+      "freeDance": "\"My Immortal,\" Evanescence and \"In the End,\" Linkin Park (Tommee Profitt feat. Fleurie & Jung Youth)",
+      "results": [
+        {
+          "place": 1,
+          "event": "2022 U.S. Figure Skating Championships",
+          "isuName": "National Championships 2022",
+          "rd": {
+            "score": 64.31,
+            "place": 2
+          },
+          "fd": {
+            "score": 91.53,
+            "place": 1
+          },
+          "total": 155.84
+        },
+        {
+          "place": 4,
+          "event": "2022 U.S. Figure Skating Championship Series",
+          "rd": {
+            "score": 62.31,
+            "place": 3
+          },
+          "fd": {
+            "score": 79.22,
+            "place": 5
+          },
+          "total": 141.53
+        },
+        {
+          "place": 5,
+          "event": "2021 Junior Grand Prix in Gdansk, Poland",
+          "isuName": "ISU JGP Baltic Cup 2021",
+          "rd": {
+            "score": 53.83,
+            "place": 6
+          },
+          "fd": {
+            "score": 81.51,
+            "place": 5
+          },
+          "total": 135.34
+        },
+        {
+          "place": 8,
+          "event": "2021 Junior Grand Prix in Krasnoyarsk, Russia",
+          "isuName": "ISU JGP Krasnoyarsk 2021",
+          "rd": {
+            "score": 51.57,
+            "place": 9
+          },
+          "fd": {
+            "score": 88.97,
+            "place": 9
+          },
+          "total": 140.54
+        },
+        {
+          "place": 3,
+          "event": "2021 Lake Placid Ice Dance International",
+          "isuName": "2021 Lake Placid Ice Dance International",
+          "rd": {
+            "score": 50.84,
+            "place": 4
+          },
+          "fd": {
+            "score": 84.46,
+            "place": 2
+          },
+          "total": 135.3
+        }
+      ],
+      "galleries": [
+        {
+          "title": "Program info</div> <div class=\"info__text\"> <span class=\"info__text__category\">Rhythm Dance:</span>\"Feeling Good,\" Michael Bubl&eacute; and \"DJ Turn It Up,\" Yellow Claw <br><br> <span class=\"info__text__category\">Free Dance:</span>\"My Immortal,\" Evanescence and \"In the End,\" Linkin Park (Tommee Profitt feat. Fleurie &amp; Jung Youth) </div> </div> <div class=\"info__results\"> <div class=\"title title_fz30 results__title\">Competition results</div> <table class=\"competition__table\"> <tr> <th class=\"competition__table__column\">Place</th> <th class=\"competition__table__column\">Event</th> <th class=\"competition__table__column\">RD</th> <th class=\"competition__table__column\">FD</th> <th class=\"competition__table__column\">Total</th> </tr> <tr> <td class=\"competition__table__row competition__table__row__firstcolumn\">1st</td> <td class=\"competition__table__row\">2022 U.S. Figure Skating Championships</td> <td class=\"competition__table__row\">64.31(2nd)</td> <td class=\"competition__table__row\">91.53(1st)</td> <td class=\"competition__table__row\">155.84</td> </tr> <tr> <td class=\"competition__table__row competition__table__row__firstcolumn\">4th</td> <td class=\"competition__table__row\">2022 U.S. Figure Skating Championship Series</td> <td class=\"competition__table__row\">62.31(3rd)</td> <td class=\"competition__table__row\">79.22(5th)</td> <td class=\"competition__table__row\">141.53</td> </tr> <tr> <td class=\"competition__table__row competition__table__row__firstcolumn\">5th</td> <td class=\"competition__table__row\">2021 Junior Grand Prix in Gdansk, Poland</td> <td class=\"competition__table__row\">53.83(6th)</td> <td class=\"competition__table__row\">81.51(5th)</td> <td class=\"competition__table__row\">135.34</td> </tr> <tr> <td class=\"competition__table__row competition__table__row__firstcolumn\">8th</td> <td class=\"competition__table__row\">2021 Junior Grand Prix in Krasnoyarsk, Russia</td> <td class=\"competition__table__row\">51.57(9th)</td> <td class=\"competition__table__row\">88.97(9th)</td> <td class=\"competition__table__row\">140.54</td> </tr> <tr> <td class=\"competition__table__row competition__table__row__firstcolumn\">3rd</td> <td class=\"competition__table__row\">2021 Lake Placid Ice Dance International</td> <td class=\"competition__table__row\">50.84(4th)</td> <td class=\"competition__table__row\">84.46(2nd)</td> <td class=\"competition__table__row\">135.30</td> </tr> </table> </div> <div class=\"info__pic\"> <div class=\"title title_fz30 info__title\"> 2021 Junior Grand Prix Poland in Gdansk",
+          "gettyId": "Phd151K1QHBUzc3tMqvRlw",
+          "sig": "KiOkdQHdnkJRIvCh7j9BBigHoTISka7rlBQfJkwAFpM=",
+          "width": 594,
+          "height": 396,
+          "items": "1235649967,1235624279,1235624559,1235650446,1235650394",
+          "caption": true
+        },
+        {
+          "title": "2021 Junior Grand Prix Russia in Krasnoyarsk",
+          "gettyId": "VfYw-JoKT6V9uIJgU5OuHg",
+          "sig": "EbkcYAKMol_sdbHHprBg-2PNnyiwRvxBxipFYnal220=",
+          "width": 594,
+          "height": 424,
+          "items": "1235326613,1235326949,1235327004,1235326952,1235296016",
+          "caption": true
+        }
+      ],
+      "level": "Junior"
+    },
+    {
+      "season": "2020-2021",
+      "rhythmDance": "Selections from La La Land",
+      "freeDance": "\"Caruso\", Lucio Dalla",
+      "results": [
+        {
+          "place": 6,
+          "event": "2021 U.S. Figure Skating Championship Series",
+          "rd": null,
+          "fd": {
+            "score": 76.3,
+            "place": null
+          },
+          "total": 76.3
+        },
+        {
+          "place": 6,
+          "event": "2021 U.S. National Championships",
+          "rd": {
+            "score": 50.76,
+            "place": null
+          },
+          "fd": {
+            "score": 77.26,
+            "place": null
+          },
+          "total": 128.02
+        }
+      ],
+      "level": "Junior"
+    }
+  ]
+}
