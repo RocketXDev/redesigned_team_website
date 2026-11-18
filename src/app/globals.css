@@ -267,31 +267,54 @@ h3.display {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   color: var(--cream);
 }
 
-.brand__mark {
+/* M monogram from the "Skate with purpose" logo, framed by two arcs like the original badge */
+.brand__badge {
+  flex: none;
   display: grid;
   place-items: center;
-  width: 40px;
-  height: 40px;
-  border: 1px solid var(--line-strong);
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 0.85rem;
-  letter-spacing: 0.02em;
-  color: var(--gold);
-  background: var(--surface);
+  border: 1.5px solid var(--gold);
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  transform: rotate(-12deg);
+  transition: transform 0.4s ease;
+}
+
+.brand:hover .brand__badge {
+  transform: rotate(-12deg) scale(1.05);
+}
+
+.brand__mark {
+  flex: none;
+  width: 28px;
+  height: 24px;
+  transform: rotate(12deg);
+  background-color: var(--gold);
+  -webkit-mask: url('/nm-mark.png') center / contain no-repeat;
+  mask: url('/nm-mark.png') center / contain no-repeat;
+  transition: background-color 0.2s ease;
+}
+
+.brand:hover .brand__mark {
+  background-color: var(--cream);
 }
 
 .brand__name {
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 1.15rem;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   white-space: nowrap;
+}
+
+.brand__amp {
+  color: var(--gold);
 }
 
 .nav-desktop {

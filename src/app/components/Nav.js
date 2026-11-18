@@ -55,8 +55,12 @@ export default function Nav() {
     <header className={`site-header${scrolled ? ' is-scrolled' : ''}${open ? ' is-open' : ''}`}>
       <div className="container site-header__inner">
         <Link href="/" className="brand" aria-label={`${site.name}, home`}>
-          <span className="brand__mark" aria-hidden="true">NM</span>
-          <span className="brand__name">{site.shortName}</span>
+          <span className="brand__badge" aria-hidden="true">
+            <span className="brand__mark" />
+          </span>
+          <span className="brand__name">
+            Neset <span className="brand__amp">&amp;</span> Markelov
+          </span>
         </Link>
 
         <nav className="nav-desktop" aria-label="Main">

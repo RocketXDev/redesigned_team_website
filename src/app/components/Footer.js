@@ -9,8 +9,12 @@ export default function Footer() {
         <div className="site-footer__grid">
           <div>
             <Link href="/" className="brand">
-              <span className="brand__mark" aria-hidden="true">NM</span>
-              <span className="brand__name">{site.name}</span>
+              <span className="brand__badge" aria-hidden="true">
+                <span className="brand__mark" />
+              </span>
+              <span className="brand__name">
+                Leah Neset <span className="brand__amp">&amp;</span> Artem Markelov
+              </span>
             </Link>
             <p className="site-footer__tagline">{site.tagline}</p>
             <div className="socials">
