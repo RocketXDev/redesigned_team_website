@@ -1,0 +1,54 @@
+name: Update competition results
+
+# Checks the team's ISU results page every day and commits any new competitions
+# to src/data/competitions.json. The push triggers a normal redeploy (e.g. on Vercel).
+on:
+  schedule:
+    - cron: "0 14 * * *" # every day at 14:00 UTC
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "Optional: ISU-format results URL to add/refresh one event"
+        required: false
+      event:
+        description: "Optional: name of the existing entry the URL belongs to"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-competitions
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Fetch new results from ISU
+        env:
+          URL: ${{ github.event.inputs.url }}
+          EVENT: ${{ github.event.inputs.event }}
+        run: |
+          set --
+          if [ -n "$URL" ]; then set -- --url "$URL"; fi
+          if [ -n "$EVENT" ]; then set -- "$@" --event "$EVENT"; fi
+          node scripts/update-competitions.mjs "$@"
+
+      - name: Commit changes
+        run: |
+          if git diff --quiet; then
+            echo "No new results."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
+          git add src/data/competitions.json
+          git commit -m "Update competition results from ISU"
+          git push
